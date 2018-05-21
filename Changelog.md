@@ -16,5 +16,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Player perspective
 
-### Known Issues
-- When mother asks question, program loops to the 'place' questions
+### Fixed Issue
+- When mother asks question, program no longer loops to the 'place' questions before user can enter input
