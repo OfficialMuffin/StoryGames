@@ -90,7 +90,7 @@ public class Fox {
                     System.out.println("'Ughh, my bedroom is a mess. I really need to clean up.'");
                     continue;
                 }
-                if (place.equals("2")) {
+                else if (place.equals("2")) {
                     System.out.println("Im feeling quite hungry. What's for snack? *Looks in the fridge*");
                     //Get item from fridge
                     System.out.println("Ill take this!");
@@ -99,41 +99,47 @@ public class Fox {
                     System.out.print(numberOfItems);
                     continue;
                 }
-                if (place.equals("3")) {
+                else if (place.equals("3")) {
                     System.out.println("*takes a deep breath* Ahhh, what a beautiful day!");
                     continue;
                 }
-                if (place.equals("4")) {
+                else if (place.equals("4")) {
                     System.out.println("*Sister shouts at you* GET OUT! NO BOYS ALLOWED!");
                     Thread.sleep(2000);
                     System.out.println("*You say to yourself* Ok, Ok, Jeeze! No need to be a bitch about it.");
                     Thread.sleep(2000);
                     System.out.println("*You walk away from her room*");
                     Thread.sleep(2000);
-                    System.out.println("*Your mother walks by and says*" + userName + ", why haven't you cleaned your room yet?");
+                    System.out.println("*Your mother walks by and says* " + userName + ", why haven't you cleaned your room yet?");
+                    Thread.sleep(2000);
                     System.out.println("################");
                     System.out.println("What do you want to say?: ");
                     System.out.println("1. I had other stuff to do.");
                     System.out.println("2. You do it!");
                     System.out.println("3. Sorry mum, I'll do it now.");
                     System.out.println("################");
+
                     Scanner say = new Scanner(System.in);
-                    if (say.equals("1")) {
+                    String reply = say.nextLine();
+                    if (reply.equals("1")) {
                         System.out.println("*Your mum replies* Well that's no excuse. Go and do it now!");
 
                     }
-                    if (say.equals("2")) {
+                    else if (reply.equals("2")) {
                         System.out.println("*Your mum shouts* That's no way to speak to your mother! Go to your room!");
 
                     }
-                    if (say.equals("3")) {
+                    else if (reply.equals("3")) {
                         System.out.println("*Your mother replies* Good, when you've done that, do your homework, ok?");
 
+                    }
+                    else {
+                        System.out.println("Invalid input! Please choose from the following options: ");
                     }
                 }
                 else {
                     System.out.println("Invalid input! Please choose from the following options: ");
-                    continue;
+                    //continue;
                 }
 
 
