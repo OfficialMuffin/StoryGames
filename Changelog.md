@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## 0.0.2 - 2018-06-02
 ### Added
+- More food and misc items for pickup
 - Random character/animal type
 - Random character sex
 - Random food items
