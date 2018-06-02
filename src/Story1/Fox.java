@@ -10,7 +10,15 @@ public class Fox {
 
         //Get random character names and sex
         String[] sex = {"male", "female"};
-        String[] characters = {"Fox", "Dog", "Cat"};
+        int randSexOfCharacter = rand.nextInt(sex.length);
+        String randSex = sex[randSexOfCharacter];
+
+        String[] characters = {"Fox", "Dog", "Cat", "Wolf"};
+        int randCharacterType = rand.nextInt(characters.length);
+        String randCharacter = characters[randCharacterType];
+
+
+
 
         //Get random age between 18 and 25
         int min = 18;
@@ -37,8 +45,8 @@ public class Fox {
         try {
             //Introduction
             //Random character type fix!!!
-            System.out.println("You are a " + rand.equals(characters));
-            System.out.print("One day there was a fox named " + userName);
+            System.out.println("You are a " + randCharacter);
+            System.out.print("One day there was a " + randSex + " " + randCharacter + " named " + userName);
             Thread.sleep(2000);
             System.out.print("\n");
 
