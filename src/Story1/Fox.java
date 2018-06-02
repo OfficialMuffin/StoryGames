@@ -28,9 +28,15 @@ public class Fox {
 
         //Add items to pick up
         int numberOfItems = 0;
-        final int maxInventorySpace = 50;
-        String[] food = {"Sandwich", "Crisps", "Chocolate Bar"};
-        String[] miscItems = {"Book"};
+        int maxInventorySpace = 50;
+
+        String[] foodItems = {"Sandwich", "Crisps", "Chocolate Bar", "Muffin"};
+        int food = rand.nextInt(foodItems.length);
+        String randFood = foodItems[food];
+
+        String[] miscItems = {"Book", "Piece of Paper", "Note"};
+        int item = rand.nextInt(foodItems.length);
+        String randItem = miscItems[item];
 
 
         //Try to sort out the game so it prints out each word at a time
@@ -100,11 +106,12 @@ public class Fox {
                 }
                 else if (place.equals("2")) {
                     System.out.println("Im feeling quite hungry. What's for snack? *Looks in the fridge*");
+                    Thread.sleep(2500);
                     //Get item from fridge
                     System.out.println("Ill take this!");
+                    System.out.println("You get " + randFood);
                     numberOfItems++;
-                    //Test
-                    System.out.print(numberOfItems);
+                    maxInventorySpace--;
                     continue;
                 }
                 else if (place.equals("3")) {
