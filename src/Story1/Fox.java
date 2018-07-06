@@ -17,6 +17,10 @@ public class Fox {
         int randCharacterType = rand.nextInt(characters.length);
         String randCharacter = characters[randCharacterType];
 
+        String[] personality= {"hot", "adorable", "obnoxious"};
+        int randCharPersonality = rand.nextInt(personality.length);
+        String randpersonality = personality[randCharPersonality];
+
 
 
 
@@ -62,7 +66,7 @@ public class Fox {
             Thread.sleep(2000);
             System.out.print("\n");
 
-            System.out.print("You have one annoying sister named ");
+            System.out.print("You have one " + randpersonality + " sister named ");
             Thread.sleep(1000);
             System.out.print("Hollie.");
             Thread.sleep(2000);
