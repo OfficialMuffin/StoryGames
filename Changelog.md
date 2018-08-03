@@ -6,6 +6,21 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+
+## 0.0.3 - 2018-08-03 [LATEST]
+### Added
+- Pickup item in the garden
+
+## 0.0.2 - 2018-06-02
+### Added
+- More food and misc items for pickup
+- Random character/animal type
+- Random character sex
+- Random food items
+
+### Changed
+- Inventory space decreases when collected item
+
 ## 0.0.1 - 2018-05-21
 ### Added
 - Players name is used in the story
@@ -18,18 +33,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed Issue
 - When mother asks question, program no longer loops to the 'place' questions before user can enter input
-
-## 0.0.2 - 2018-06-02
-### Added
-- More food and misc items for pickup
-- Random character/animal type
-- Random character sex
-- Random food items
-
-### Changed
-- Inventory space decreases when collected item
-
-## 0.0.3 - 2018-08-03
-### Added
-- Pickup item in the garden
 
