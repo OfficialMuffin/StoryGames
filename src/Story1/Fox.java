@@ -13,7 +13,7 @@ public class Fox {
         int randSexOfCharacter = rand.nextInt(sex.length);
         String randSex = sex[randSexOfCharacter];
 
-        String[] characters = {"Fox", "Dog", "Cat", "Wolf"};
+        String[] characters = {"Fox", "Husky", "Cat", "Wolf"};
         int randCharacterType = rand.nextInt(characters.length);
         String randCharacter = characters[randCharacterType];
 
@@ -113,13 +113,18 @@ public class Fox {
                     Thread.sleep(2500);
                     //Get item from fridge
                     System.out.println("Ill take this!");
-                    System.out.println("You get " + randFood);
+                    System.out.println("You get a " + randFood);
                     numberOfItems++;
                     maxInventorySpace--;
                     continue;
                 }
                 else if (place.equals("3")) {
                     System.out.println("*takes a deep breath* Ahhh, what a beautiful day!");
+                    Thread.sleep(1000);
+                    System.out.println("*Birds chirp nearby*");
+                    System.out.println("You find a " + randItem);
+                    numberOfItems++;
+                    maxInventorySpace--;
                     continue;
                 }
                 else if (place.equals("4")) {
