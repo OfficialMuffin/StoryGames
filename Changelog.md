@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Pickup item in the garden
 
+### Changed
+- Renamed folders
+
+### Removed
+- Removed old "Story1" folder 
+
 ## 0.0.2 - 2018-06-02
 ### Added
 - More food and misc items for pickup
