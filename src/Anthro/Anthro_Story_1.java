@@ -13,7 +13,7 @@ public class Anthro_Story_1 {
         int randSexOfCharacter = rand.nextInt(sex.length);
         String randSex = sex[randSexOfCharacter];
 
-        String[] characters = {"Anthro_Story_1", "Husky", "Cat", "Wolf"};
+        String[] characters = {"Husky", "Cat", "Wolf"};
         int randCharacterType = rand.nextInt(characters.length);
         String randCharacter = characters[randCharacterType];
 
