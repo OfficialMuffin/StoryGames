@@ -2,3 +2,5 @@
 
 # StoryGames
 Just some random story game ideas with pickups, speech and diffrerent characters.
+
+**WILL EVENTUALLY TURN THIS INTO A MAVEN PROJECT**
