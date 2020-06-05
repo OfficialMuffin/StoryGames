@@ -21,9 +21,6 @@ public class Anthro_Story_1 {
         int randCharPersonality = rand.nextInt(personality.length);
         String randpersonality = personality[randCharPersonality];
 
-
-
-
         //Get random age between 18 and 25
         int min = 18;
         int max = 25;
@@ -41,8 +38,6 @@ public class Anthro_Story_1 {
         String[] miscItems = {"Book", "Piece of Paper", "Note"};
         int item = rand.nextInt(foodItems.length);
         String randItem = miscItems[item];
-
-
 
         //Start of Game
         Scanner name = new Scanner(System.in);
@@ -102,8 +97,19 @@ public class Anthro_Story_1 {
 
                 String place = input.nextLine();
                 if (place.equals("1")) {
-                    System.out.println("'Ughh, my bedroom is a mess. I really need to clean up.'");
+                    System.out.println("'Ughh, my bedroom is a mess. I really need to clean up.\n'");
+
+                    //TODO Fix this
+                    System.out.println("Shall I clean my room? (Y/n)\n");
+                    String yesNo = input.nextLine();
+                    if (yesNo == "Y") {
+                        System.out.println("Your mother sees you cleaning.");
+                    }
+                    else {
+                        continue;
+                    }
                     continue;
+
                 }
                 else if (place.equals("2")) {
                     System.out.println("Im feeling quite hungry. What's for snack? *Looks in the fridge*");
@@ -182,4 +188,3 @@ public class Anthro_Story_1 {
         }
     }
 }
-
